@@ -1,7 +1,9 @@
 <template>
   <v-container
+  id="pricing"
+  data-aos="fade-up"
     style="margin-top: 150px; background-color: #edf3fa"
-    class="pt-10"
+    class="py-16"
     fluid
   >
     <v-row>
@@ -16,8 +18,8 @@
         </div>
       </v-col>
     </v-row>
-    <v-row class="mt-10" style="padding: 0 130px">
-      <v-col cols="3" v-for="card in cards" :key="card.id">
+    <v-row class="mt-10 px-16 ">
+      <v-col cols="12" lg="3" md="4" sm="6" v-for="card in cards" :key="card.id" >
         <v-card class="priceCard d-flex flex-column align-center pa-10">
           <v-img :src="card.icon" style="width: 19%"></v-img>
           <v-card-title class="mt-3" style="font-size: 25px">{{

@@ -7,6 +7,8 @@ import * as components from "vuetify/components";
 import * as directives from "vuetify/directives";
 import "@mdi/font/css/materialdesignicons.css";
 import { aliases, mdi } from "vuetify/iconsets/mdi";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 import "swiper/css";
 import "swiper/css/pagination";
@@ -28,3 +30,4 @@ const vuetify = createVuetify({
 const app = createApp(App);
 app.use(vuetify);
 app.mount("#app");
+AOS.init();

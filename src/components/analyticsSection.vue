@@ -1,5 +1,5 @@
 <template>
-  <v-container class="mt-16 px-0">
+  <v-container class="mt-16 px-0 px-4" data-aos="fade-up" id="">
     <v-row>
       <v-col cols="12">
         <div class="d-flex flex-column align-center text-center">
@@ -10,10 +10,10 @@
       </v-col>
     </v-row>
     <v-row class="mt-16">
-      <v-col cols="6">
+      <v-col cols="12" md="6" lg="6" sm="6">
         <v-img :src="image"></v-img>
       </v-col>
-      <v-col cols="6">
+      <v-col cols="12" md="6" lg="6" sm="6">
         <v-card
           elevation="15"
           v-for="li in list"

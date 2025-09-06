@@ -1,5 +1,5 @@
 <template>
-  <v-container class="mt-16">
+  <v-container class="mt-16" data-aos="fade-up" id="about">
     <v-row>
       <v-col cols="12">
         <div class="d-flex flex-column align-center text-center">
