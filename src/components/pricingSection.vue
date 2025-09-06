@@ -18,7 +18,7 @@
         </div>
       </v-col>
     </v-row>
-    <v-row class="mt-10 px-16 ">
+    <v-row class="mt-10 px-lg-16">
       <v-col cols="12" lg="3" md="4" sm="6" v-for="card in cards" :key="card.id" >
         <v-card class="priceCard d-flex flex-column align-center pa-10">
           <v-img :src="card.icon" style="width: 19%"></v-img>

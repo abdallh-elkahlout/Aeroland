@@ -11,10 +11,11 @@
               <p class="text-body-1 text-sm-body-2 hint">{{ subTitle }}</p>
               <v-btn
                 class="getDemo text-none mt-5 text-white"
-                height="50"
-                width="150"
+                height="60"
+                width="170"
                 style="
                   background: linear-gradient(135deg, #5945e6 0%, #9c7af2 100%);
+                  font-size: 16px;
                 "
               >
                 Get a Demo
@@ -51,14 +52,16 @@ const subTitle = ref(
 
 .banner .parent .cont .mainTitle {
   color: #333;
-  font-weight: 500;
+  font-weight: 600;
   line-height: 1.2;
+  font-size: 65px !important;
 }
 
 .banner .parent .cont .hint {
-  margin: 20px 0;
+  margin: 30px 0;
   color: #696969;
-  max-width: 500px;
+  max-width: 650px;
+  font-size: 20px !important;
   
 }
 

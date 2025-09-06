@@ -15,7 +15,7 @@ import footerSection from "./components/footerSection.vue";
 <template>
   <v-app>
     <navBar />
-    <v-main>
+    <v-main class="pa-0">
       <mainSection />
       <aboutSection />
       <analyticsSection />
