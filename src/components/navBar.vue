@@ -2,7 +2,7 @@
   <v-app-bar :elevation="0" class="navbar" style="z-index: 999">
     <!-- Logo -->
     <div class="logo-section">
-      <v-img src="/src/assets/logo.png" alt="Logo" width="170"></v-img>
+      <v-img :src="logo" alt="Logo" width="170"></v-img>
     </div>
 
     <!-- روابط Navbar للأجهزة الكبيرة -->
@@ -106,7 +106,7 @@
       style="height: 75px; display: flex; justify-content: space-between"
     >
       <div class="image" style="cursor: pointer">
-        <v-img src="/src/assets/logo.png" alt="Logo" width="170"></v-img>
+        <v-img :src="logo" alt="Logo" width="170"></v-img>
       </div>
       <v-icon size="35" @click="drawer = false">mdi-close</v-icon>
     </div>
@@ -127,7 +127,7 @@
 
 <script setup>
 import { ref, onMounted, onBeforeUnmount } from "vue";
-
+import logo from "@/assets/logo.png"
 let drawer = ref(false);
 const dropdownOpen = ref(false);
 
@@ -146,7 +146,7 @@ const scrollTo = (id) => {
   const element = document.getElementById(id);
   if (element) {
     element.scrollIntoView({ behavior: "smooth" });
-    activeSection.value = id; 
+    activeSection.value = id;
   }
 };
 
