@@ -40,7 +40,7 @@
           <p style="color: #7e7e7e" class="mb-1">
             "The ocean never ceases to amaze!" Feature: Ben Klea
           </p>
-          <div class="links" style="display: flex; flex-direction: column;">
+          <div class="links" style="display: flex; flex-direction: column">
             <a href="#" style="color: #38cb89">https://t.co/jSRMsZAdPW</a>
             <a href="#" style="color: #38cb89">https://t.co/2iDReuyPMt</a>
           </div>
@@ -58,24 +58,41 @@
         </v-card>
       </v-col>
     </v-row>
-  </v-container>
-  <v-divider class="mt-16 mb-7"></v-divider>
-  <v-container class="my-10">
-    <v-card variant="0">
-        <v-row >
-            <v-col cols="12" lg="10" class="d-flex justify-center align-center">
-              <p style="font-size: 15px; display: flex; color: #7e7e7e;">&copy; {{ year  }} 
-                <p style="font-weight: 600; margin-right: 3px; margin-left: 3px;"> AeroLand </p> Made with ❤ by 
-                  <p style="font-weight: 600; margin-left: 3px;"> HasThemes </p></p>
-            </v-col>
-            <v-col cols="12" lg="2" class="d-flex justify-center align-center">
-              <div class="d-flex">
-                <a href="#" class="link"><v-icon class="icon facebook">mdi mdi-facebook</v-icon></a>
-                <a href="#" class="link"><v-icon class="icon twitter">mdi mdi-twitter</v-icon></a>
-                <a href="#" class="link"><v-icon class="icon instagram">mdi mdi-instagram</v-icon></a>
-              </div>
-            </v-col>
-        </v-row>
+
+    <v-divider class="mt-16 mb-7"></v-divider>
+    <v-card variant="0" class="ma-10">
+      <v-row class="justify-center">
+        <v-col
+          cols="12"
+          lg="10"
+          md="12"
+          sm="12"
+          class="text-center text-lg-start"
+        >
+          <div
+            class="d-flex flex-wrap align-center justify-center justify-lg-start"
+            style="font-size: 15px; color: #7e7e7e; gap: 3px"
+          >
+            <span>&copy; {{ year }}</span>
+            <span style="font-weight: 600">AeroLand</span>
+            <span>Made with ❤ by</span>
+            <span style="font-weight: 600">HasThemes</span>
+          </div>
+        </v-col>
+        <v-col cols="12" lg="2" md="12" sm="12" class="text-center text-lg-end">
+          <div class="d-flex justify-center justify-lg-end">
+            <a href="#" class="link"
+              ><v-icon class="icon facebook">mdi mdi-facebook</v-icon></a
+            >
+            <a href="#" class="link"
+              ><v-icon class="icon twitter">mdi mdi-twitter</v-icon></a
+            >
+            <a href="#" class="link"
+              ><v-icon class="icon instagram">mdi mdi-instagram</v-icon></a
+            >
+          </div>
+        </v-col>
+      </v-row>
     </v-card>
   </v-container>
 </template>
@@ -129,7 +146,7 @@ const year = ref(new Date().getFullYear());
   width: 50% !important;
 }
 
-.link{
+.link {
   padding: 10px;
   width: 50px;
   height: 50px;
@@ -140,30 +157,42 @@ const year = ref(new Date().getFullYear());
   font-size: 20px;
 }
 
-.facebook{
+.facebook {
   transition: all 0.2s ease-in-out;
   color: #7e7e7e;
 }
-.facebook:hover{
-  color: #1877F2 !important;
+.facebook:hover {
+  color: #1877f2 !important;
   transform: scale(1.2);
 }
-.instagram{
+.instagram {
   transition: all 0.2s ease-in-out;
   color: #7e7e7e;
 }
 .instagram:hover {
-  background: linear-gradient(45deg, #405DE6, #5851DB, #833AB4, #C13584, #E1306C, #FD1D1D, #F56040, #F77737, #FCAF45, #FFDC80);
+  background: linear-gradient(
+    45deg,
+    #405de6,
+    #5851db,
+    #833ab4,
+    #c13584,
+    #e1306c,
+    #fd1d1d,
+    #f56040,
+    #f77737,
+    #fcaf45,
+    #ffdc80
+  );
   -webkit-background-clip: text; /* لتطبيق التدرج على النص */
   color: transparent; /* لجعل النص شفافًا بحيث يظهر التدرج */
   transform: scale(1.2); /* التكبير عند التمرير */
 }
-.twitter{
+.twitter {
   transition: all 0.2s ease-in-out;
   color: #7e7e7e;
 }
-.twitter:hover{
-  color: #1DA1F2 !important;
+.twitter:hover {
+  color: #1da1f2 !important;
   transform: scale(1.2);
 }
 </style>
